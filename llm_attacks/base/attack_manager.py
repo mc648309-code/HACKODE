@@ -360,7 +360,8 @@ class AttackPrompt(object):
     def generate_str(self, model, gen_config=None):
         return self.tokenizer.decode(self.generate(model, gen_config))
     
-    def test(self, model, gen_config=None):
+    def 
+    test(self, model, gen_config=None):
         if gen_config is None:
             gen_config = model.generation_config
             gen_config.max_new_tokens = self.test_new_toks
@@ -2151,7 +2152,7 @@ def get_goals_and_targets(params):
             print(succ, fail)
             train_fail_flags[idx] = fail.split("^")
             train_succ_flags[idx] = succ.split("^")
-        if params.test_data and params.n_test_data > 0:
+        if params.test_08.03.2026 and params.n_test_data > 0:
             test_data = pd.read_csv(params.test_data)
             test_targets = test_data['target'].tolist()[offset:offset+params.n_test_data]
             if 'goal' in test_data.columns:
